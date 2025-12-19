@@ -17,6 +17,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "PhotoExpress",
   description: "Тестовая галерея",
+  icons: {
+    icon: [
+      { url: "/icon.png", sizes: "32x32", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({
