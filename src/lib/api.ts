@@ -9,7 +9,6 @@ export async function fetchImages(params: FetchImagesParams): Promise<UnsplashIm
     }
   });
   const url = `/api/images?${searchParams.toString()}`;
-  console.log("Fetching images:", url);
   const res = await fetch(url);
 
   if (!res.ok) {

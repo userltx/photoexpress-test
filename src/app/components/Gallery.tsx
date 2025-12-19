@@ -56,6 +56,8 @@ export default function Gallery({ images, columnsCount = 4 }: Props) {
                 <Image
                   src={img.urls.small}
                   alt={img.alt_description || "photo"}
+                  sizes="25vw"
+                  priority={index === 0}
                   fill
                   className="absolute top-0 left-0 w-full h-full object-cover"
                 />
